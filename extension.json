@@ -1,0 +1,42 @@
+{
+	"name": "LockFormEdit",
+	"version": "0.0.1",
+	"author": [
+		"Jon Anderton"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:LockFormEdit",
+	"descriptionmsg": "lockformedit-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"AutoloadClasses": {
+        "LockFormEdit": "LockFormEdit.class.php",
+		"LockFormEditHooks": "LockFormEdit.hooks.php"
+	},
+	"config": {
+		"LockFormEditCategories": []
+	},
+	"Hooks": {
+		"MediaWikiPerformAction": [
+			"LockFormEditHooks::onMediaWikiPerformAction"
+		]
+	},
+	"MessagesDirs": {
+		"ApprovedRevs_Radiant": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.lockformedit.foo": {
+			"scripts": [
+
+			],
+			"styles": [
+
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "LockFormEdit"
+	}
+}

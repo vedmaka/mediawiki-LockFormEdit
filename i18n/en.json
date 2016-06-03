@@ -1,0 +1,5 @@
+{
+    "lockformedit-description": "This extension prevents users from editing pages using raw editor.",
+    "lockformedit-error-title": "Permissions error",
+    "lockformedit-error-text": "You are not allowed to perform this action."
+}
